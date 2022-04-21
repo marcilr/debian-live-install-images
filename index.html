@@ -133,6 +133,75 @@ Worked performed:<br>
     <p style="font-family:courier;">
       ~/git/os/debian/live-install-images</br>
     </p>
+  <li>Download Debian Live install image DVD/USB amd64 image:
+    <p>
+    open Debian Live install images:<br>
+    <a href="https://www.debian.org/CD/live/">
+      https://www.debian.org/CD/live/</a>
+    </p>
+
+    <p>
+    click DVD/USB amd64 (bottom left)<br>
+    <a href="https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/">
+      https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/</a><br>
+    </p>
+
+    <p>
+    select latest debian live xfce torrent (2022-03-26 17:53, 49K):<br>
+    click debian-live-11.3.0-amd64-xfce.iso.torrent
+    </p>
+
+    <p>
+    Install lightweight BitTorrent client:<br>
+    $ sudo aptitude install transmission-gtk transmission-cli<br>
+    </p>
+
+    <p>
+    Execute transmission-gtk application:<br>
+    $ transmission-gtk<br>
+    </p>
+
+    <p>
+    Download debian-live-11.3.0-amd64-xfce.iso.torrent<br>
+    In transmission-gtk:<br>
+    </p>
+
+    <p>
+    click File<br>
+    click Open URL...<br>
+    select ~/Downloads/debian-live-11.3.0-amd64-xfce.iso.torrent<br>
+    click Open<br> 
+    </p> 
+
+    <p>
+    At Torrent Options<br>
+    Torrent file: debian-live-11.3.0-amd64-xfce.iso.torrent (2.59GB)<br>
+    Destination Folder: Downloads<br>
+    click Open
+    </p>
+
+    <p>
+    Download took ~3 minutes<br>
+    </p>
+
+    <p>
+    Verify and take sha256sum of torrent file:<br>
+    $ cd ~/Downloads/<br>
+    $ type sha256sum<br>
+    sha256sum is hashed (/usr/bin/sha256sum)<br>
+    $ sha256sum debian-live-11.3.0-amd64-xfce.iso<br>
+    713443a1326deaf03343fef9cb9346d5a1b2f5634a138540ae549a7b89b3adff  debian-live-11.3.0-amd64-xfce.iso
+    </p>
+
+    <p>
+    The debian-live-11.3.0-amd64-xfce.iso sha256sum matched that listed in:</br>
+    https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/SHA256SUMS<br>
+    </p>
+
+    <p>
+    The download looks good.<br>
+    </p>
+
 </ul>
 
 <!--- ============================ LINKS ============================= --->
